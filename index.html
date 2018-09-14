@@ -1,722 +1,280 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)http://rozhlas2017.superkoderi.cz/tpl/14-datari.html -->
-<html lang="cs" class="js fonts-loaded no-touchevents"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=0">
-
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Dataři">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content="../img/illust/twitter.jpg">
-
-	<meta property="og:title" content="Dataři">
-	<meta property="og:description" content="">
-	<meta property="og:image" content="../img/illust/facebook.jpg">
-	<meta property="og:site_name" content="Project">
-	<meta property="og:url" content="http://www.rozhlas.cz/zpravy/portal/">
-
-	<title>Dataři | iRozhlas</title>
-
-	<link rel="stylesheet" href="./wrapper_files/style.css" media="screen, handheld">
-
-	<link rel="icon" href="http://rozhlas2017.superkoderi.cz/img/favicon.ico">
-	<link rel="apple-touch-icon" href="http://rozhlas2017.superkoderi.cz/img/apple-touch-icon-iphone.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="http://rozhlas2017.superkoderi.cz/img/apple-touch-icon-ipad.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="http://rozhlas2017.superkoderi.cz/img/apple-touch-icon-large.png">
-
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-	<script>
-		(function () {
-			var className = document.documentElement.className;
-			isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
-
-			function getCookie(name) {
-				var value = '; ' + document.cookie;
-				var parts = value.split('; ' + name + '=');
-				if (parts.length === 2) return parts.pop().split(';').shift();
-			}
-
-			var textSize = getCookie('textSize');
-
-			if (textSize) {
-				document.documentElement.setAttribute('data-fz', textSize);
-			}
-
-			className = className.replace('no-js', 'js');
-
-			if(document.cookie.indexOf('fontsLoaded') > -1) {
-				className += ' fonts-loaded';
-			}
-
-			if(document.cookie.indexOf('inverseVersion') > -1) {
-				className += ' page-inverse';
-			}
-
-			if(document.cookie.indexOf('textVersion') > -1 || isOperaMini) {
-				className += ' page-text-version';
-			}
-
-			if(isOperaMini) {
-				className += ' operamini';
-			}
-
-			if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-				className += ' ios';
-			}
-
-			if(document.querySelector && document.cookie.indexOf('forceDesktop') > -1) {
-				var viewport = document.querySelector("meta[name=viewport]");
-				viewport.setAttribute('content', 'width=1200');
-				className += ' page-forced-desktop';
-			}
-
-			document.documentElement.className = className;
-		}());
-	</script>
-
-	<script src="./wrapper_files/modernizr.min.js"></script>
-<style type="text/css">
-:root #content > #center > .dose > .dosesingle,
-:root #content > #right > .dose > .dosesingle
-{ display: none !important; }</style><style type="text/css">
-:root #content > #right > .dose > .dosesingle,
-:root #content > #center > .dose > .dosesingle
-{ display: none !important; }</style></head>
-
-	<body id="top" class="">
-<nav class="m-accessibility" aria-labelledby="m-accessibility">
-	<p id="m-accessibility" class="vhide">Přístupnostní navigace</p>
-	<a title="Přejít k obsahu (Klávesová zkratka: Alt + 2)" accesskey="2" href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#main">Přejít k obsahu</a>
-	<span class="hide">|</span>
-	<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#menu-main">Přejít k hlavnímu menu</a>
-	<span class="hide">|</span>
-	<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#form-search">Přejít k vyhledávání</a>
-</nav>
-
-		<header class="header header--simple" role="banner">
-			<div class="row-main">
-				<div class="header__top hide--m">
-<div class="header__search">
-	<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="header__login">Přihlásit</a>
-
-	<form id="form-search" action="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html?" class="f-search f-search--header" role="search">
-		<p class="inp">
-			<label for="search-header" class="inp__label js-search">
-				<span class="icon-svg icon-svg--search">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-search" x="0" y="0" width="100%" height="100%"></use>
-</svg><span class="icon-svg__fallback">Vyhledávání</span>	
-</span>
-
-			</label>
-			<span class="inp__fix">
-				<input type="text" placeholder="Zadejte hledaný výraz" class="inp__text inp__text--icon-after" id="search-header" name="search-header">
-
-				<button class="btn btn--icon-blank" type="submit">
-					<span class="btn__text">
-						<span class="icon-svg icon-svg--search">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-search" x="0" y="0" width="100%" height="100%"></use>
-</svg><span class="icon-svg__fallback">Vyhledat</span>	
-</span>
-
-					</span>
-				</button>
-			</span>
-		</p>
-	</form>
-</div>
-				</div>
-
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="header__images js-text-version--icon">
-					<span class="icon-svg icon-svg--images">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-images" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-					<span class="vhide">Zobrazit obrázky</span>
-				</a>
-
-	<p class="header__logo">
-		<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">
-			<span class="vhide">iRozhlas</span>
-			<span class="icon-svg icon-svg--logo-irozhlas">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-logo-irozhlas" x="0" y="0" width="100%" height="100%"></use>
-</svg><span class="icon-svg__fallback">iRozhlas</span>	
-</span>
-
-		</a>
-	</p>
-
-				<nav id="menu-main" class="m-main m-main--simple" role="navigation" aria-labelledby="m-main">
-					<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-main__toggle js-mobile-menu" id="m-main">
-						<span class="vhide">Hlavní menu</span>
-						<span class="icon-svg icon-svg--menu">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-menu" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-					</a>
-
-					<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-main__link m-main__link--home js-static-menu" data-src="./m-static.html">
-						<span class="vhide">Český rozhlas - Zprávy</span>
-						<span class="icon-svg icon-svg--symbol">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-symbol" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-					</a>
-				</nav>
-			</div>
-
-			<p class="header__socials">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">
-					<span class="icon-svg icon-svg--facebook">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-facebook" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-					<span class="vhide">Facebook</span>
-				</a>
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">
-					<span class="icon-svg icon-svg--twitter">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-twitter" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-					<span class="vhide">Twitter</span>
-				</a>
-			</p>
-		</header>
-
-		<main id="main" class="main" role="main">	
-		<article role="article" class="b-data"> 			
-			<div class="b-data__content" id="content">
-
-<script type="text/javascript">document.getElementsByTagName('article')[0].classList.add('b-data--no-img');</script>
-<style>li{background:none !important;margin:0 !important;padding:0 !important}ul,ol{list-style:initial !important;font-size:medium !important;line-height:1.5 !important}hr{max-width:none !important}</style>
-<div class="row-main row-main--article">
-<h1 class="b-data__title b-data__title--sm">
-Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze
-</h1>
-</div>
-<div class="row-main row-main--narrow">
-<p class="text-bold text-lg">Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat.</p>
-<p class="meta meta--icon">
-	<span class="icon-svg icon-svg--bullet">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="https://www.irozhlas.cz/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-bullet" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-<!--[[ZPRAVY_SNOWFALL_METADATA:]]-->
-</p>
-
-
-
-<div class="b-inline b-inline--left"><div class="b-inline__wrap"><div class="b-inline__content"><div class="text-sm">
-    <p>
-    <b>KAREL HYNEK MÁCHA</b>
-    </p><p>
-    Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-    </p>
-</div></div></div></div>
-
-<p>Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve „špičce“ okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na <a href="https://cs.wikipedia.org/wiki/Hektar">hektar</a> (Václavské náměstí má rozlohu asi 4 hektary).</p>
-<p>Naopak v noci se nejvíc lidí se „namačká“ ve Vršovicích, jde o 430 osob na hektar.</p>
-<p>Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský <a href="http://www.iprpraha.cz/">Institut plánování a rozvoje</a>.</p>
-<p></div><div class="row-main row-main--article"><em>Pokud vás zajímá, kolik lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte posuvníkem nahoře.</em></div><div class="row-main row-main--narrow"></p>
-<h2>Data na prodej</h2>
-<p><div class="b-inline b-inline--right"><div class="b-inline__wrap"><div class="b-inline__content"><div class="text-sm">
-    <p>
-    <b>KAREL HYNEK MÁCHA</b>
-    </p><p>
-    Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-    </p>
-</div></div></div></div></p>
-<p>I pokud netelefonujeme nebo neposíláme SMS, telefon pravidelně komunikuje s vysílači v síti mobilního operátora. Z dat o síle signálu a použité anténě je možné odvodit, kde se přibližně telefon nachází a jak dlouhou dobu na místě strávil.</p>
-<p>Mobilní operátor má <a href="https://www.zakonyprolidi.cz/cs/2005-127/zneni-20160919#p97-3">zákonnou povinnost</a> takové informace uchovávat, a to půl roku do minulosti, přistupovat k nim ale mohou jen bezpečnostní složky, typicky policie nebo rozvědka.</p>
-<p>Operátoři ale obdobné informace mohou anonymizovat (tedy zbavit identifikace konkrétního uživatele) a agregovat, tedy spojit informace o jednotlivcích do jakýchsi skupin. Výsledná obecná čísla pak přeprodávají dál, například marketingovým firmám či dopravním analytikům. Zpětně z nich nejde dovodit, kde se pohybuje každý jednotlivec, dávají ale určitý přehled o obecném chování obyvatel nějakého místa.</p>
-
-<p class="meta meta--right meta--big">
-<!--[[ZPRAVY_SNOWFALL_AUTHORS:FOOTER]]-->
-</p>
-</div>
-<!--[[ZPRAVY_SNOWFALL_RELATED:ARTICLES]]-->
-</div>
-</article>
-</div>
-</div>
-</div><script>
-
-var links=document.getElementsByTagName('a');for(var i=0,linksLength=links.length;i<linksLength;i++){if(links[i].hostname!=window.location.hostname){links[i].target='_blank';links[i].rel='noopener noreferrer';};};</script>
-
-		</article>
-			<div class="wrapper">
-				<div class="row-main">
-					<section role="region" class="b-category">
-						<div class="b-category__side">
-							<h2 class="title title--icon">
-								<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">
-									<span class="icon-svg icon-svg--bullet">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-bullet" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-									Zahraničí
-								</a>
-							</h2>
-
-<div class="c-grid hide--m">
-	<ul class="c-grid__list">
-
-		<li class="c-grid__item">
-			<div class="b-audio">
-				<p class="b-audio__head">
-					<span class="b-audio__play">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="play-btn">
-							Přehrát
-							<span class="icon-svg icon-svg--play">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-play" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-						</a>
-					</span>
-					<span class="b-audio__meta text-uppercase"><time datetime="2016-10-18">18.10.</time> <a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">Magazín Meteor</a></span>
-				</p>
-				<p class="b-audio__title">
-					Planeta pavouků, hledá se plch velký a jak se rodí objevy?
-				</p>
-			</div>
-		</li>
-		<li class="c-grid__item">
-			<div class="b-audio">
-				<p class="b-audio__head">
-					<span class="b-audio__play">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="play-btn">
-							Přehrát
-							<span class="icon-svg icon-svg--play">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-play" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-						</a>
-					</span>
-					<span class="b-audio__meta text-uppercase"><time datetime="2016-10-18">18.10.</time> <a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">Magazín Meteor</a></span>
-				</p>
-				<p class="b-audio__title">
-					Planeta pavouků, hledá se plch velký a jak se rodí objevy?
-				</p>
-			</div>
-		</li>
-
-	</ul>
-</div>
-						</div>
-
-						<div class="b-category__content">
-							<div class="c-articles">
-								<div class="c-articles__list">
-									<article role="article" class="c-articles__item">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="b-article">
-											<div class="b-article__img img img--16x9 img--w480 img--w238--m" data-text-version="">
-												<span class="img__holder">
-													<img src="./wrapper_files/480x270.jpg" width="480" height="270" alt="">
-												</span>
-											</div>
-											<div class="b-article__content">
-												<h3 class="text-xl text-sm--m text-regular--m">
-													Na Mars a zpět. Obama věří v cestu lidí na rudou planetu do roku 2030
-												</h3>
-												<p class="text-sm hide--m">
-													Podle rozhodnutí ministerstva vnitra je přes 25 milionů za výpis trestných činů za posledních pět let adekvátní. Česko tak zatím nebude mít podrobnou mapu kriminality, která je v zahraničí běžná. Věcí se nyní...
-												</p>
-											</div>
-										</a>
-									</article>
-
-									<article role="article" class="c-articles__item c-articles__item--w50p">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="b-article">
-											<div class="b-article__img img img--16x9 img--w238" data-text-version="">
-												<span class="img__holder">
-													<img src="./wrapper_files/238x134.jpg" width="238" height="134" alt="">
-												</span>
-											</div>
-											<div class="b-article__content">
-												<h3 class="text-sm--m text-md text-regular--m">
-													Z dánské rybí farmy uplavalo 80 tisíc pstruhů. Pochytejte je, ohrožují ekosystém, vyzývají odborníci
-												</h3>
-											</div>
-										</a>
-									</article>
-
-									<article role="article" class="c-articles__item c-articles__item--w50p">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="b-article">
-											<div class="b-article__img img img--16x9 img--w238" data-text-version="">
-												<span class="img__holder">
-													<img src="./wrapper_files/238x134.jpg" width="238" height="134" alt="">
-												</span>
-											</div>
-											<div class="b-article__content">
-												<h3 class="text-sm--m text-md text-regular--m">
-													Video: 'Tanec' boeingu na Letišti Václava Havla. Piloty překvapil poryv větru
-												</h3>
-											</div>
-										</a>
-									</article>
-								</div>
-
-								<p class="c-articles__more hide--d">
-									<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="link-more link-more--next">
-										Další články
-										<span class="icon-svg icon-svg--arrow-dots">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-arrow-dots" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-									</a>
-								</p>
-							</div>
-
-							<div class="c-links hide--m">
-								<ul class="c-links__list">
-									<li class="c-links__item">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="c-links__link">Archeologové našli pozůstatky římského tábora. Je nejsevernější na našem území</a>
-									</li>
-									<li class="c-links__item">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="c-links__link">Nové i rekonstruované. Mezi stavbami roku je tunel Blanka i Hospital v Kuksu</a>
-									</li>
-									<li class="c-links__item">
-										<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="c-links__link">Ve vesmíru je desetkrát více galaxií. Většinu z nich zatím nevidíme</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</main>
-
-<footer class="footer" role="contentinfo">
-	<div class="row-main">
-		<nav class="m-footer-m hide--d">
-			<ul class="m-footer-m__list">
-				<li class="m-footer-m__item">
-					<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer-m__link">
-						Cookies
-					</a>
-				</li>
-				<li class="m-footer-m__item">
-					<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer-m__link js-force-desktop">
-						Plná verze
-					</a>
-				</li>
-			</ul>
-
-			<p class="m-footer-m__top">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#top" class="link-top js-scroll-to">
-					Nahoru
-					<span class="icon-svg icon-svg--top">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-top" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-				</a>
-			</p>
-		</nav>
-
-
-		<div class="footer__wrap hide--m">
-			<p class="footer__logo">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#">
-					<span class="vhide">iRozhlas</span>
-					<span class="icon-svg icon-svg--logo-irozhlas">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-logo-irozhlas" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-				</a>
-			</p>
-
-			<nav class="m-tools" aria-labelledby="m-tools">
-				<p class="vhide" id="m-tools">Doplňková navigace</p>
-
-				<ul class="m-tools__list">
-					
-
-					<li class="m-tools__item m-tools__item--mobile">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-tools__link js-force-desktop-reset">
-							<span class="m-tools__icon"><span class="icon-svg icon-svg--mobile">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-mobile" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-</span>
-							<span class="m-tools__label">Mobilní<br> verze</span>
-						</a>
-					</li>
-					<li class="m-tools__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-tools__link">
-							<span class="m-tools__icon"><span class="icon-svg icon-svg--rss">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-rss" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-</span>
-							<span class="m-tools__label">RSS kanály</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-
-		<div class="footer__links">
-			<nav class="m-footer hide--m" aria-labelledby="m-footer">
-				<p id="m-footer" class="vhide">Navigace v zápatí</p>
-
-				<ul class="m-footer__list">
-
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Redakce</a>
-					</li>
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Mapa webu</a>
-					</li>
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Soukromí a cookies</a>
-					</li>
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Podmínky užití</a>
-					</li>
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Kontakty</a>
-					</li>
-					<li class="m-footer__item">
-						<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-footer__link">Práce</a>
-					</li>
-				</ul>
-			</nav>
-
-			<p class="footer__copy">
-				© 1997-2016 Český rozhlas
-			</p>
-		</div>
-	</div>
-</footer>
-
-		<nav class="m-mobile">
-<div class="m-mobile__panel">
-	<p class="m-mobile__logo">
-		<span class="vhide">Český rozhlas - Zprávy</span>
-		<span class="icon-svg icon-svg--logo-irozhlas">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-logo-irozhlas" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-	</p>
-
-	<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__close js-mobile-menu">
-		<span class="vhide">Zavřít</span>
-		<span class="icon-svg icon-svg--close">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-close" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-	</a>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.2/highcharts.js"></script>
+
+<style>
+.board {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img {
+    height: 300px;
+    margin: 5px;
+}
+#chart {
+    max-width: 100%;
+    height: 300px;
+}
+
+.sliderbox {
+    width: 80%;
+}
+.slide {
+    width: 100%;
+}
+
+#divider {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    margin: 50px;
+}
+
+</style>
+
+<div class="board" id="ao_board">
+    <img id="ao_vid" class='img' src="./media/adam_video/5.jpg" alt="">
+    <img id="ao_3d" class='img' src="./media/adam_3d/5.jpg" alt="">
+    <div id="ao_chart"></div>
+    <div class="sliderbox">
+        <input type="range" min="5" max="970" step="5" value="5" class="slide" id="ao_slider">
+    </div>
 </div>
 
-<div class="m-mobile__wrap">
-	<div class="m-mobile__group m-mobile__group--menu">
-		<form class="m-mobile__search">
-			<p class="inp inp--btn">
-				<label for="search" class="vhide">Vyhledávání</label>
-				<span class="inp__fix">
-					<input type="text" class="inp__text inp__text--md" id="search" name="search">
-				</span>
-				<button class="btn btn--md btn--icon-blank" type="submit">
-					<span class="btn__text">
-						<span class="vhide">Vyhledat</span>
-						<span class="icon-svg icon-svg--search">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-search" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
+<div id="divider"></div>
 
-					</span>
-				</button>
-			</p>
-		</form>
 
-		<ul class="m-mobile__list m-mobile__list--striped">
-
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Domácí</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Svět</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Regiony</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Ekonomika</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Sport</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Věda</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Kultura</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Komentáře</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Zelená vlna</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Počasí</a>
-			</li>
-		</ul>
-	</div>
-
-	<div class="m-mobile__group m-mobile__group--submenu">
-		<ul class="m-mobile__list">
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link m-mobile__link--text-version js-text-version" data-toggled="Plná verze">
-					Textová verze
-				</a>
-			</li>
-			
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">
-					Nejnovější zprávy
-				</a>
-			</li>
-		</ul>
-	</div>
-
-	<div class="m-mobile__group m-mobile__group--text">
-		<p class="m-socials m-socials--lg">
-			<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-socials__link">
-				<span class="vhide">Facebook</span>
-				<span class="icon-svg icon-svg--facebook">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-facebook" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-			</a>
-			<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-socials__link">
-				<span class="vhide">Twitter</span>
-				<span class="icon-svg icon-svg--twitter">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-twitter" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-			</a>
-			<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-socials__link">
-				<span class="vhide">Google+</span>
-				<span class="icon-svg icon-svg--gplus">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-gplus" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
-
-			</a>
-		</p>
-
-		<div class="m-text">
-			<p>
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-text__invert js-inverse">
-					Inverzně
-				</a>
-			</p>
-		</div>
-	</div>
-
-	<div class="m-mobile__group m-mobile__group--submenu">
-		<ul class="m-mobile__list">
-
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Kontakty</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Redakce</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link">Cookies</a>
-			</li>
-		</ul>
-	</div>
-
-	<div class="m-mobile__group m-mobile__group--logos">
-		<ul class="m-mobile__list">
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link m-mobile__link--cesky-rozhlas">
-					<span class="vhide">Český rozhlas</span>
-				</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link m-mobile__link--radiozurnal">
-					<span class="vhide">Radiožurnál</span>
-				</a>
-			</li>
-			<li class="m-mobile__item">
-				<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__link m-mobile__link--plus">
-					<span class="vhide">Plus</span>
-				</a>
-			</li>
-		</ul>
-	</div>
+<div class="board" id="ss_board">
+    <img id="ss_vid" class='img' src="./media/stepan_video/5.jpg" alt="">
+    <img id="ss_3d" class='img' src="./media/stepan_3d/5.jpg" alt="">
+    <div id="ss_chart"></div>
+    <div class="sliderbox">
+        <input type="range" min="5" max="835" step="5" value="5" class="slide" id="ss_slider">
+    </div>
 </div>
 
-<a href="http://rozhlas2017.superkoderi.cz/tpl/14-datari.html#" class="m-mobile__panel js-mobile-menu">
-	<span class="m-mobile__label">
-		Zavřít menu
-	</span>
+<script>
 
-	<span class="m-mobile__close">
-		<span class="vhide">Zavřít</span>
-		<span class="icon-svg icon-svg--close">
-	<svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<use xlink:href="./wrapper_files/icons-svg.svg#icon-close" x="0" y="0" width="100%" height="100%"></use>
-	</svg>
-</span>
+function isEventSupported(eventName) {
+    var el = document.createElement('div');
+    eventName = 'on' + eventName;
+    var isSupported = (eventName in el);
+    if (!isSupported) {
+        el.setAttribute(eventName, 'return;');
+        isSupported = typeof el[eventName] == 'function';
+    }
+    el = null;
+    return isSupported;
+};
 
-	</span>
-</a>
-		</nav>
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+    e.preventDefault();
+  e.returnValue = false;
+}
 
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="./wrapper_files/app.js"></script>
-		<script>
-			App.run({});
-		</script>
-		<!--<![endif]-->
-	
+(function() {
+    var chart = Highcharts.chart('ao_chart', {
+    title: {
+        text: 'Distance of center of gravity from the wall'
+    },
+    credits: {
+        enabled: false
+    },
+    xAxis: {
+        plotLines: [{
+            color: 'red',
+            value: 0.05,
+            width: 2
+        }],
+        title: {
+            text: 'time (s)'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'distance of center of gravity from the wall (m)'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
 
-</body></html>
+    plotOptions: {
+        series: {
+            enableMouseTracking: false,
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 0.05,
+            pointInterval: 0.01
+        }
+    },
+    legend: {
+            enabled: false
+    },
+    series: [{
+        name: 'teziste',
+        data: [0.4987435, 0.49721667, 0.4957006, 0.49402553, 0.49218324, 0.49024647, 0.48831558, 0.48648646, 0.48483434, 0.48340932, 0.48223379, 0.48130167, 0.48058352, 0.48004085, 0.47963846, 0.47934639, 0.47913936, 0.47899839, 0.47891486, 0.47889107, 0.47893909, 0.47907966, 0.47933847, 0.47973689, 0.4802812, 0.48095965, 0.48174912, 0.48262697, 0.48357818, 0.48459408, 0.48566625, 0.48678389, 0.48793566, 0.48911503, 0.49032447, 0.49157593, 0.49288818, 0.49428207, 0.49577764, 0.49739429, 0.49915129, 0.50106603, 0.50315046, 0.5054068, 0.50782365, 0.5103727, 0.51300961, 0.51568198, 0.5183422, 0.52095664, 0.52350897, 0.5259977, 0.52843243, 0.53082621, 0.53318602, 0.53550941, 0.5377878, 0.54001421, 0.54218918, 0.54432148, 0.54642397, 0.54850459, 0.55055887, 0.55256945, 0.55451691, 0.55639619, 0.55822653, 0.56004858, 0.56191021, 0.56384993, 0.5658834, 0.56799662, 0.57014871, 0.57228637, 0.57436341, 0.5763582, 0.57827938, 0.58016086, 0.58205152, 0.58400273, 0.58605951, 0.58825094, 0.59058338, 0.59303892, 0.5955795, 0.59815681, 0.60072029, 0.60322183, 0.60561979, 0.60788661, 0.61001617, 0.61202502, 0.61394256, 0.61579359, 0.61758566, 0.61930764, 0.62093896, 0.62246072, 0.62386119, 0.62513554, 0.62628412, 0.62731069, 0.6282208, 0.62902105, 0.62971789, 0.63031775, 0.63082612, 0.63124287, 0.63156033, 0.63176507, 0.63184452, 0.63179553, 0.63162792, 0.63136142, 0.63101572, 0.63060397, 0.6301282, 0.62958211, 0.62895221, 0.62822264, 0.62738216, 0.62643433, 0.62540215, 0.62432516, 0.62324977, 0.62221831, 0.6212638, 0.6204074, 0.6196593, 0.61901814, 0.61847317, 0.61800712, 0.61760122, 0.6172362, 0.61689425, 0.61656064, 0.61622614, 0.61588931, 0.61555499, 0.61523241, 0.6149298, 0.61465114, 0.61439389, 0.61414993, 0.61390829, 0.6136592, 0.61339581, 0.61311454, 0.61281306, 0.61248922, 0.61214077, 0.61176717, 0.61137104, 0.6109581, 0.61053795, 0.61012208, 0.609721, 0.60934007, 0.60897774, 0.60862666, 0.60827839, 0.60792893, 0.60758072, 0.60724187, 0.6069243, 0.60664052, 0.6064015, 0.6062122, 0.60606921, 0.60595971, 0.6058647, 0.6057623, 0.60563266, 0.60546279, 0.60525, 0.60500389, 0.6047439, 0.60449404, 0.60427523, 0.60409939, 0.603966, 0.60386425, 0.60377848, 0.60369617, 0.60361457, 0.60354412, 0.60350585, 0.60352373, 0.60361487, 0.60378194, 0.60401255, 0.60428333, 0.6045689, 0.60484999, 0.60511869, 0.60537994, 0.60564661, 0.60593563, 0.60626149, 0.60663533, 0.60706276, 0.60754573, 0.60808194, 0.60866636, 0.60929108, 0.60994524, 0.61061603, 0.61128992, 0.61195523, 0.61260229, 0.61322421, 0.61381686, 0.61437923, 0.61491489, 0.61543071, 0.61593652, 0.61644071, 0.61694735, 0.61745292, 0.61794454, 0.61840206, 0.61880082, 0.61911678, 0.61933172, 0.61943716, 0.61943638, 0.61934251, 0.61917412, 0.61894912, 0.61867934, 0.61836898, 0.61801654, 0.6176185, 0.61717492, 0.61669022, 0.61617339, 0.61563635, 0.61509097, 0.61454815, 0.61401701, 0.61350465, 0.61301547, 0.61255115, 0.61211032, 0.61168838, 0.61127943, 0.61087745, 0.6104784, 0.61008132, 0.6096893, 0.60930735, 0.60894161, 0.60859668, 0.60827506, 0.60797787, 0.60770708, 0.60746837, 0.60727233, 0.60713464, 0.60707396, 0.60710931, 0.60725707, 0.60752976, 0.60793424, 0.60847187, 0.60913748, 0.6099202, 0.61080515, 0.61177617, 0.61281908, 0.61392432, 0.61508715, 0.6163066, 0.61758256, 0.61891305, 0.62029296, 0.62171328, 0.62316298, 0.62463218, 0.62611496, 0.62761211, 0.62913102, 0.63068271, 0.63227761, 0.63392204, 0.63561791, 0.63736349, 0.6391505, 0.64095867, 0.64275146, 0.64447933, 0.64609438, 0.64756685, 0.64889717, 0.65011525, 0.65126783, 0.65240157, 0.65354937, 0.65472418, 0.6559189, 0.65711027, 0.65826583, 0.65935129, 0.66033953, 0.66121602, 0.66198218, 0.66265249, 0.66324753, 0.66378647, 0.66428173, 0.66473949, 0.66516316, 0.66555476, 0.66591626, 0.66624868, 0.6665501, 0.66681498, 0.66703612, 0.6672067, 0.66732109, 0.66737628, 0.66737324, 0.6673187, 0.66722244, 0.66709495, 0.66694498, 0.6667785, 0.66659814, 0.66640496, 0.6662029, 0.6659981, 0.66579241, 0.66557884, 0.66534495, 0.6650809, 0.66478103, 0.66443974, 0.66404605, 0.66358626, 0.66305113, 0.66244125, 0.66177028, 0.66106224, 0.66034514, 0.65964288, 0.65897149, 0.65833849, 0.6577425, 0.65717304, 0.6566118, 0.65603966, 0.65544319, 0.65481842, 0.65416926, 0.65350652, 0.65284759, 0.65221536, 0.65163422, 0.65112281, 0.65068859, 0.65032834, 0.6500324, 0.64979094, 0.64959812, 0.64945275, 0.64935523, 0.64930266, 0.64928573, 0.64929014, 0.64930171, 0.64931142, 0.64931554, 0.64931363, 0.64930534, 0.64928871, 0.64926249, 0.64922708, 0.64918637, 0.64914834, 0.64912266, 0.64912099, 0.64915442, 0.6492331, 0.64936429, 0.64955163, 0.64979464, 0.65008831, 0.65042371, 0.65078872, 0.65116906, 0.6515497, 0.65191686, 0.65225786, 0.65256232, 0.65282148, 0.65302765, 0.65317464, 0.65325916, 0.65328306, 0.65325469, 0.65318763, 0.6530959, 0.65298963, 0.65287143, 0.65273392, 0.65255916, 0.65232182, 0.65199614, 0.65156519, 0.65102971, 0.65040916, 0.64973217, 0.64902169, 0.64828056, 0.64749169, 0.64662594, 0.64565986, 0.64458877, 0.64343011, 0.6422134, 0.64096355, 0.63969058, 0.63838971, 0.63704991, 0.6356622, 0.6342169, 0.63269705, 0.63107646, 0.62932926, 0.62743926, 0.62540269, 0.62322044, 0.62089694, 0.61844236, 0.61587363, 0.61320955, 0.61046404, 0.60764474, 0.60475594, 0.60179687, 0.59875375, 0.59559089, 0.59224963, 0.58865732, 0.58473873, 0.58043361, 0.57571715, 0.57061452, 0.56520271, 0.55959666, 0.5539282, 0.54832047, 0.54286581, 0.53761536, 0.5325796, 0.5277369, 0.52304703, 0.5184657, 0.51395661, 0.50949502, 0.50506288, 0.50064051, 0.49619985, 0.49170893, 0.48714119, 0.48248363, 0.47773668, 0.47290799, 0.4680078, 0.46304783, 0.45804074, 0.45299801, 0.44792742, 0.4428336, 0.43771964, 0.43258935, 0.42745021, 0.42231664, 0.4172093, 0.41214925, 0.40715164, 0.40222299, 0.39736223, 0.39256817, 0.38784763, 0.38321781, 0.37869999, 0.37431106, 0.37006035, 0.36594999, 0.36197495, 0.35812473, 0.35438916, 0.35076788, 0.34727579, 0.34394172, 0.34080029, 0.33788082, 0.33519852, 0.33275029, 0.33051589, 0.3284623, 0.32654968, 0.32473716, 0.32298785, 0.32127142, 0.31956393, 0.31784627, 0.31610388, 0.31432679, 0.31251153, 0.3106645, 0.30880478, 0.30696374, 0.30518058, 0.30349559, 0.30194259, 0.30054405, 0.2993108, 0.29824597, 0.29735041, 0.29662654, 0.29607797, 0.29570541, 0.29550198, 0.2954503, 0.29552281, 0.29568562, 0.29590425, 0.29614836, 0.29639474, 0.29662776, 0.29683754, 0.29701713, 0.29715997, 0.29725838, 0.29730403, 0.29728818, 0.29720303, 0.29704228, 0.2968021, 0.29648238, 0.29608929, 0.29563636, 0.29514468, 0.29464015, 0.29414955, 0.29369581, 0.29329512, 0.29295459, 0.29267275, 0.29244131, 0.29224843, 0.2920824, 0.29193443, 0.29180014, 0.29167899, 0.29157245, 0.29148251, 0.2914106, 0.29135779, 0.2913256, 0.29131642, 0.29133362, 0.2913813, 0.29146376, 0.29158384, 0.29174197, 0.2919355, 0.2921592, 0.29240614, 0.29266936, 0.29294291, 0.29322225, 0.2935043, 0.29378682, 0.29406816, 0.29434717, 0.29462314, 0.29489607, 0.29516631, 0.29543498, 0.29570353, 0.29597384, 0.29624772, 0.29652649, 0.2968103, 0.29709819, 0.29738876, 0.29768196, 0.2979807, 0.298291, 0.29862034, 0.29897454, 0.2993544, 0.29975346, 0.30015826, 0.30055094, 0.30091286, 0.30122793, 0.30148444, 0.30167598, 0.30180249, 0.30187014, 0.30189037, 0.30187878, 0.30185306, 0.30183083, 0.30182737, 0.30185294, 0.30190948, 0.30198714, 0.3020618, 0.30209452, 0.30203441, 0.3018254, 0.30141804, 0.3007859, 0.29993877, 0.29892647, 0.2978307, 0.29674852, 0.29577515, 0.29499221, 0.29446444, 0.29424021, 0.29434752, 0.29478139, 0.2954936, 0.29639462, 0.29737109, 0.29831204, 0.29913315, 0.29979074, 0.30028012, 0.30062297, 0.30085215, 0.30100149, 0.30110052, 0.30117294, 0.30123737, 0.30130816, 0.30139631, 0.30150938, 0.30165175, 0.30182475, 0.3020269, 0.30225357, 0.3024976, 0.30275023, 0.3030026, 0.30324626, 0.30347452, 0.30368325, 0.30387211, 0.30404443, 0.30420604, 0.30436391, 0.30452409, 0.30469134, 0.3048687, 0.30505723, 0.30525583, 0.30546156, 0.30567026, 0.30587757, 0.30608061, 0.3062796, 0.30647829, 0.30668411, 0.30690703, 0.30715844, 0.30744916, 0.3077876, 0.30817816, 0.3086212, 0.30911425, 0.30965433, 0.31023902, 0.31086621, 0.31153277, 0.31223291, 0.31295767, 0.31369489, 0.31443167, 0.31515628, 0.31585988, 0.31653762, 0.31718794, 0.31781161, 0.31840935, 0.31898052, 0.31952211, 0.32002982, 0.32049921, 0.32092747, 0.32131404, 0.32166049, 0.32196876, 0.32223979, 0.32247317, 0.32266751, 0.32282224, 0.32293877, 0.32302204, 0.32308176, 0.32313126, 0.32318625, 0.32326227, 0.32337189, 0.32352298, 0.32371756, 0.32395267, 0.32422218, 0.32451779, 0.32483175, 0.32515776, 0.32549202, 0.32583356, 0.32618311, 0.32654226, 0.32691222, 0.32729346, 0.32768503, 0.32808524, 0.32849264, 0.3289068, 0.32932895, 0.32976061, 0.33020276, 0.3306548, 0.33111513, 0.33158064, 0.3320477, 0.33251211, 0.33296889, 0.33341196, 0.33383426, 0.33422837, 0.33458722, 0.33490494, 0.33517823, 0.33540741, 0.33559781, 0.33575863, 0.33590034, 0.33603084, 0.33615237, 0.33626038, 0.33634511, 0.33639517, 0.3364011, 0.33635828, 0.33626917, 0.33614331, 0.33599627, 0.3358472, 0.33571574, 0.33561808, 0.33556485, 0.3355605, 0.33560511, 0.3356972, 0.33583549, 0.3360188, 0.33624527, 0.33651105, 0.33680987, 0.33713326, 0.33747175, 0.33781579, 0.33815694, 0.33848903, 0.33880925, 0.33911842, 0.33941963, 0.33971688, 0.34001368, 0.3403123, 0.34061265, 0.34091324, 0.34121126, 0.34150448, 0.34179211, 0.34207511, 0.34235623, 0.34263963, 0.34293041, 0.34323412, 0.34355578, 0.34389868, 0.3442632, 0.34464678, 0.34504449, 0.34544957, 0.34585533, 0.34625646, 0.34665018, 0.34703639, 0.34741664, 0.34779301, 0.34816778, 0.34854218, 0.34891596, 0.34928614, 0.34964615, 0.34998569, 0.35029233, 0.35055378, 0.35076192, 0.35091451, 0.35101545, 0.35107312, 0.35109732, 0.35109633, 0.35107604, 0.35103908, 0.35098556, 0.35091433, 0.35082373, 0.35071239, 0.35057899, 0.35042226, 0.3502413, 0.35003582, 0.34980661, 0.3495557, 0.34928605, 0.34900111, 0.3487047, 0.3484008, 0.34809309, 0.34778473, 0.34747779, 0.34717336, 0.34687147, 0.34657222, 0.34627685, 0.3459875, 0.34570602, 0.34543231, 0.34516302, 0.34489268, 0.34461597, 0.34433088, 0.34404117, 0.34375572, 0.34348643, 0.34324574, 0.34304428, 0.34288982, 0.34278768, 0.34274113, 0.3427515, 0.3428182, 0.34293839, 0.34310737, 0.34331909, 0.34356761, 0.34384704, 0.34415135, 0.34447315, 0.34480223, 0.34512541, 0.34542802, 0.34569687, 0.34592336, 0.34610516, 0.34624556, 0.34635174, 0.34643254, 0.34649613, 0.34654859, 0.34659341, 0.34663209, 0.34666494, 0.34669116, 0.34670898, 0.34671611, 0.34671059, 0.34669253, 0.34666514, 0.34663445, 0.34660786, 0.3465924, 0.34659371, 0.34661534, 0.34665841, 0.34672198, 0.34680405, 0.34690133, 0.34700873, 0.34711942, 0.34722483, 0.34731573, 0.34738296, 0.34741899, 0.34742048, 0.34739152, 0.34734687, 0.34731093, 0.34731317, 0.34738114, 0.34753558, 0.34778544, 0.34812731, 0.3485465, 0.34902099, 0.34952578, 0.35003695, 0.35053447, 0.35100436, 0.35143876, 0.35183617, 0.35219917, 0.35253248, 0.35283998, 0.35312301, 0.35337934, 0.35360652, 0.35380751, 0.35399568, 0.3541975, 0.35444894, 0.35478699, 0.35523751, 0.35580412, 0.35646448, 0.35717541, 0.35788587, 0.35855088, 0.35914662, 0.35968593, 0.36023372, 0.36091501, 0.36190388, 0.36338645, 0.36550573, 0.3683089, 0.3717199, 0.37555107, 0.37954924, 0.38345599, 0.3870551, 0.39019728, 0.39280373, 0.39485937, 0.39640063, 0.39750051, 0.39825031, 0.39874217, 0.39905408, 0.3992421, 0.39934084, 0.39936972, 0.39934391, 0.3992846, 0.39922446, 0.39920565, 0.39927268, 0.39946413, 0.39980465, 0.40029743, 0.40091819, 0.40161332, 0.40230757, 0.4029291, 0.40345719, 0.40399015, 0.40482661, 0.40654281]
+    }]
+
+});
+
+chart.reflow();
+
+function updateBoard(val) {
+    ord = val;
+    document.getElementById('ao_3d').src='./media/adam_3d/' + ord + '.jpg';
+    document.getElementById('ao_vid').src='./media/adam_video/' + ord + '.jpg';
+    chart.update({
+        xAxis: {
+            plotLines: [{
+                color: 'red',
+                value: val / 100,
+                width: 2
+            }],
+        }
+    });
+}
+
+// scroling watch
+var ord = 5;
+var wheelEvent = isEventSupported('mousewheel') ? 'mousewheel' : 'wheel';
+document.getElementById('ao_board').addEventListener(wheelEvent, function(e) {
+    var delta  = e.deltaY || e.wheelDelta;
+    if (delta > 0) {
+        ord += 5
+    } else {
+        ord -= 5
+    }
+    if (ord < 5) {
+        ord = 5
+    }
+    if (ord > 970) {
+        ord = 970
+    }
+    if ((ord <= 5) | (ord >= 970)) {
+        return
+    } else {
+        preventDefault(e);
+    };
+    updateBoard(ord)
+    document.getElementById('ao_slider').value = ord;
+});
+
+document.getElementById('ao_slider').addEventListener('mousemove', function(e) {
+    updateBoard(e.target.valueAsNumber)
+});
+document.getElementById('ao_slider').addEventListener('touchmove', function(e) {
+    updateBoard(e.target.valueAsNumber)
+});
+})();
+
+// logika pro Stepana
+(function() {
+    var chart = Highcharts.chart('ss_chart', {
+    title: {
+        text: 'Distance of center of gravity from the wall'
+    },
+    credits: {
+        enabled: false
+    },
+    xAxis: {
+        plotLines: [{
+            color: 'red',
+            value: 0.05,
+            width: 2
+        }],
+        title: {
+            text: 'time (s)'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'distance of center of gravity from the wall (m)'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            enableMouseTracking: false,
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 0.05,
+            pointInterval: 0.01
+        }
+    },
+    legend: {
+            enabled: false
+    },
+    series: [{
+        name: 'teziste',
+        data: [0.63963431, 0.63898724, 0.63822913, 0.63727611, 0.63610101, 0.63470328, 0.63309044, 0.63127065, 0.62925386, 0.62705362, 0.62468612, 0.62216651, 0.61950564, 0.61670876, 0.61377633, 0.61070621, 0.60749769, 0.60415405, 0.60068101, 0.59708542, 0.59337485, 0.58955771, 0.58564454, 0.58165109, 0.57760113, 0.57352698, 0.56946594, 0.56545597, 0.56153345, 0.55773365, 0.55409205, 0.55064464, 0.54742306, 0.54444987, 0.54173362, 0.53926837, 0.53703612, 0.53500968, 0.53315657, 0.53144145, 0.52982867, 0.52828813, 0.52680343, 0.52537978, 0.52404422, 0.52283704, 0.52179599, 0.52094221, 0.52027392, 0.51977116, 0.51940918, 0.51917094, 0.51905411, 0.51906848, 0.51922774, 0.51954114, 0.52000827, 0.52061909, 0.52135783, 0.52220875, 0.52316219, 0.52421862, 0.52538884, 0.52668893, 0.52813268, 0.52972442, 0.53145355, 0.53329307, 0.53520215, 0.53713089, 0.53902549, 0.54083323, 0.54250687, 0.5440073, 0.54530734, 0.54639381, 0.54726928, 0.5479517, 0.54847038, 0.54885888, 0.54914784, 0.54936016, 0.54950917, 0.54960191, 0.54964346, 0.54964083, 0.54960442, 0.5495463, 0.54947704, 0.54940182, 0.54931808, 0.54921669, 0.54908532, 0.54891288, 0.54869443, 0.54843467, 0.54814941, 0.54786336, 0.54760593, 0.54740351, 0.54727262, 0.54721451, 0.54721516, 0.54725063, 0.54729652, 0.54733622, 0.54736543, 0.54739094, 0.54742563, 0.5474807, 0.54756075, 0.54766148, 0.54777098, 0.54787475, 0.54796064, 0.54802376, 0.54806876, 0.54810905, 0.54816401, 0.54825377, 0.5483942, 0.54859078, 0.54883683, 0.54911423, 0.54939842, 0.5496664, 0.54990488, 0.55011672, 0.55032182, 0.55055326, 0.55085206, 0.55125976, 0.55181241, 0.55253541, 0.55344063, 0.5545249, 0.55576992, 0.55714464, 0.55860972, 0.56012392, 0.561652, 0.56316996, 0.56466907, 0.56615609, 0.56765109, 0.56918436, 0.57079095, 0.57250488, 0.57435113, 0.57633841, 0.57845485, 0.58067048, 0.58294648, 0.58524626, 0.58754587, 0.58983535, 0.59211576, 0.5943898, 0.59665352, 0.59889376, 0.60109133, 0.60322863, 0.60529733, 0.60729879, 0.60924292, 0.61114317, 0.61301184, 0.61485553, 0.61667132, 0.61844432, 0.62014854, 0.62175035, 0.62321961, 0.62454194, 0.62572873, 0.6268158, 0.62785214, 0.62888438, 0.6299417, 0.63103008, 0.63213265, 0.63321847, 0.63425177, 0.6352008, 0.63604301, 0.63676804, 0.63737649, 0.63787812, 0.63828981, 0.63863325, 0.638933, 0.63921422, 0.63950002, 0.63980728, 0.6401425, 0.64050019, 0.64086407, 0.64121205, 0.64152455, 0.64179188, 0.64202034, 0.64223272, 0.64246374, 0.64275151, 0.64312947, 0.64361906, 0.64422661, 0.64494252, 0.64573824, 0.64656782, 0.64737099, 0.64808184, 0.64864188, 0.64901143, 0.64917737, 0.64915073, 0.64895695, 0.64862335, 0.64816791, 0.64759535, 0.64689958, 0.64607126, 0.64510638, 0.64401293, 0.64281142, 0.64152849, 0.64018887, 0.63880885, 0.63739544, 0.63595212, 0.63448733, 0.6330198, 0.63157701, 0.63018745, 0.62887323, 0.62764221, 0.62648803, 0.62539268, 0.62433237, 0.62328207, 0.62222117, 0.6211375, 0.62003148, 0.6189183, 0.61782634, 0.6167919, 0.61585343, 0.61504406, 0.61438912, 0.61390615, 0.61360735, 0.61350316, 0.61360478, 0.61392438, 0.61447281, 0.61525452, 0.61626172, 0.61746877, 0.6188314, 0.62029272, 0.62179571, 0.62329799, 0.62478113, 0.62625176, 0.62773222, 0.62924743, 0.63081437, 0.63243979, 0.63412154, 0.63585174, 0.63761824, 0.63940293, 0.64118189, 0.64292949, 0.64462578, 0.64626122, 0.64783591, 0.64935035, 0.65079546, 0.65214771, 0.65337634, 0.65445501, 0.65537506, 0.65615082, 0.65681636, 0.65741652, 0.65799707, 0.65859973, 0.65925932, 0.65999979, 0.66082776, 0.66172439, 0.6626429, 0.66351569, 0.66427022, 0.66484898, 0.66522634, 0.66541362, 0.66545349, 0.66540354, 0.66531867, 0.66523629, 0.66516954, 0.66510779, 0.66502267, 0.66487926, 0.66464615, 0.66430306, 0.66384381, 0.66327554, 0.66261363, 0.66187543, 0.66107631, 0.66022646, 0.65933073, 0.65839058, 0.65740573, 0.65637785, 0.65531492, 0.65423405, 0.65316314, 0.65213788, 0.65119457, 0.65036112, 0.6496489, 0.64904946, 0.64853728, 0.6480791, 0.64764374, 0.64721042, 0.64677364, 0.64634377, 0.64594382, 0.6456055, 0.64536476, 0.64525628, 0.64530861, 0.64554024, 0.64595538, 0.6465441, 0.64728248, 0.64813888, 0.64907855, 0.6500724, 0.6511023, 0.65216243, 0.65325487, 0.65438241, 0.65553969, 0.65670955, 0.6578632, 0.65896589, 0.65998411, 0.66089374, 0.66168445, 0.66236013, 0.66293442, 0.66342473, 0.66384435, 0.66419977, 0.66449219, 0.66472232, 0.66489506, 0.66501915, 0.66510606, 0.66516542, 0.66520214, 0.66521353, 0.66518813, 0.66511023, 0.66496497, 0.66474515, 0.66445428, 0.6641019, 0.66369563, 0.66323411, 0.66270834, 0.66210866, 0.66143596, 0.66070819, 0.65995884, 0.65922803, 0.65854907, 0.65793884, 0.65739447, 0.65689749, 0.65642142, 0.65594351, 0.65545148, 0.65494555, 0.65443063, 0.65390813, 0.65337032, 0.65280223, 0.65218794, 0.65151453, 0.65077513, 0.64996499, 0.64908069, 0.64811879, 0.64707989, 0.64597589, 0.64483392, 0.64369494, 0.64260525, 0.64160365, 0.64070952, 0.63991618, 0.63919353, 0.63849902, 0.63779312, 0.63705164, 0.63627213, 0.63547063, 0.63467479, 0.63391161, 0.63319826, 0.63253623, 0.63190925, 0.63128775, 0.63063699, 0.62992847, 0.6291492, 0.62830657, 0.62742734, 0.62655026, 0.62571573, 0.62495613, 0.62429106, 0.62372583, 0.62325394, 0.62286097, 0.62252784, 0.62223285, 0.62195492, 0.62167305, 0.62136775, 0.62102157, 0.62061983, 0.62015271, 0.61961788, 0.6190204, 0.61837459, 0.61770165, 0.6170271, 0.6163758, 0.61576903, 0.6152212, 0.61474013, 0.61432743, 0.61398172, 0.61369938, 0.61347634, 0.61330795, 0.61318964, 0.61311704, 0.61308676, 0.6130963, 0.61314374, 0.61322618, 0.61333776, 0.61346924, 0.61360586, 0.61372805, 0.61381245, 0.6138348, 0.61377299, 0.61361164, 0.61334586, 0.61298114, 0.61253226, 0.61201847, 0.61145926, 0.61087155, 0.61026669, 0.60965079, 0.60902399, 0.60837966, 0.60770363, 0.60697639, 0.60617834, 0.60529619, 0.60432923, 0.6032896, 0.60219908, 0.60108036, 0.59994924, 0.59880924, 0.59765351, 0.59647107, 0.59525269, 0.59399623, 0.59270608, 0.59138989, 0.59005517, 0.58870697, 0.58734781, 0.5859791, 0.58460194, 0.58321726, 0.58182621, 0.58042955, 0.57902688, 0.57761639, 0.5761922, 0.57474345, 0.57325584, 0.57171404, 0.57010627, 0.56842613, 0.5666734, 0.56485343, 0.56297606, 0.56105483, 0.55910754, 0.55715674, 0.55522931, 0.55335319, 0.5515517, 0.54983807, 0.54821432, 0.54667383, 0.54520738, 0.5438109, 0.5424872, 0.54124439, 0.54008973, 0.53902292, 0.53803384, 0.53710145, 0.53619772, 0.53529096, 0.53435147, 0.53335756, 0.5323, 0.53118408, 0.53002566, 0.52884388, 0.52765161, 0.52644926, 0.52522385, 0.5239535, 0.52261704, 0.52120173, 0.51970804, 0.51814854, 0.51654255, 0.51490909, 0.51326227, 0.51161093, 0.50995994, 0.50831401, 0.50667816, 0.50505692, 0.503452, 0.50186074, 0.50027668, 0.4986926, 0.49710432, 0.49551445, 0.49393409, 0.49238205, 0.49088073, 0.48945215, 0.4881134, 0.48687348, 0.48573303, 0.48468581, 0.4837217, 0.48283044, 0.48200503, 0.48124334, 0.48054785, 0.47992408, 0.47937799, 0.4789128, 0.4785274, 0.47821549, 0.47796613, 0.47776559, 0.47759911, 0.47745341, 0.47731829, 0.47718805, 0.47706202, 0.47694409, 0.47684184, 0.4767659, 0.4767288, 0.4767437, 0.47682294, 0.47697562, 0.47720519, 0.47750825, 0.47787336, 0.47828194, 0.47871006, 0.47913074, 0.47951654, 0.47984236, 0.48008856, 0.48024312, 0.48030299, 0.4802739, 0.48016807, 0.48000136, 0.47979081, 0.47955197, 0.47929838, 0.47904113, 0.47878909, 0.47854927, 0.47832707, 0.47812635, 0.47794995, 0.47780004, 0.47767854, 0.47758758, 0.47752997, 0.47750887, 0.47752795, 0.47759122, 0.47770292, 0.47786692, 0.47808585, 0.47835961, 0.47868437, 0.47905126, 0.47944731, 0.47985652, 0.48026231, 0.48064959, 0.48100606, 0.48132354, 0.48159733, 0.48182574, 0.48200929, 0.48214978, 0.4822489, 0.48230809, 0.48232809, 0.48230943, 0.48225293, 0.48216042, 0.48203567, 0.48188514, 0.48171809, 0.48154643, 0.48138362, 0.48124257, 0.48113352, 0.48106232, 0.48103037, 0.4810355, 0.48107335, 0.48113787, 0.48122209, 0.48131782, 0.4814164, 0.48150957, 0.48159114, 0.48165825, 0.48171145, 0.48175445, 0.48179284, 0.48183355, 0.48188332, 0.48194805, 0.48203138, 0.48213413, 0.48225331, 0.4823823, 0.48251259, 0.48263529, 0.4827435, 0.48283327, 0.48290375, 0.48295596, 0.48299181, 0.4830128, 0.48301953, 0.48301131, 0.48298636, 0.48294067, 0.48286873, 0.48276335, 0.48261735, 0.48242569, 0.48218763, 0.48190814, 0.48159751, 0.48127034, 0.48094344, 0.48063418, 0.48035941, 0.48013496, 0.47997406, 0.47988307, 0.47985607, 0.47986993, 0.47988617, 0.47985831, 0.47974184, 0.4795047, 0.47913274, 0.47862816, 0.47800279, 0.47727087, 0.47644517, 0.47553673, 0.47455826, 0.47352755, 0.47246972, 0.47141609, 0.47039995, 0.46945041, 0.46858767, 0.46782008, 0.46714613, 0.46655825, 0.46604744, 0.46560678, 0.46523187, 0.46491936, 0.46466437, 0.46445867, 0.46429047, 0.4641456, 0.46400881, 0.46386528, 0.4637011, 0.46350437, 0.46326652, 0.46298447, 0.46266273, 0.46231332, 0.4619548, 0.46160781, 0.46129137, 0.46101895, 0.46079516, 0.4606137, 0.46045732, 0.46030006, 0.46011108, 0.4598614, 0.45953003, 0.45911017, 0.45861039, 0.45805308, 0.45746961, 0.45689335, 0.45635414, 0.45587286, 0.45546025, 0.45511684, 0.45483544, 0.45460483, 0.45441341, 0.45425227, 0.45411709, 0.45400831, 0.45392925, 0.45388436, 0.45387647, 0.45390567, 0.45396942, 0.45406348, 0.45418388, 0.4543286, 0.45449808, 0.45469558, 0.45492497, 0.45518953, 0.45548949, 0.45582139, 0.45617819, 0.45655069, 0.45692986, 0.45730847, 0.45768225, 0.45805019, 0.45841369, 0.45877573, 0.45914015, 0.4595114, 0.45989338, 0.46028972, 0.4607029, 0.46113423, 0.46158427, 0.4620524, 0.46253702, 0.46303579, 0.4635452, 0.4640612, 0.46457991, 0.46509838, 0.46561626, 0.46613705, 0.46666938, 0.46722627, 0.4678241, 0.46847922, 0.46920398, 0.47000238, 0.47086781, 0.47178233, 0.47271958, 0.47365013, 0.47454718, 0.47539249, 0.47617906, 0.47691193, 0.47760504, 0.47827712, 0.4789466, 0.47962829, 0.48033035, 0.48105443, 0.48179528, 0.48254198, 0.48327902, 0.48398846, 0.48465317, 0.48525885, 0.48579672, 0.48626333, 0.48665953, 0.48698813, 0.487252, 0.48745281, 0.48759148, 0.48766935, 0.48768938, 0.48765725, 0.48758233, 0.48747814, 0.48736191, 0.48725352, 0.48717389, 0.48714241, 0.48717359, 0.48727435, 0.48744211, 0.48766559, 0.48792633, 0.4882026, 0.4884735, 0.48872259, 0.48893905, 0.48911777, 0.48925695, 0.48935643, 0.4894155, 0.48943257, 0.48940569, 0.4893333, 0.48921493, 0.48905161, 0.48884466, 0.48859486, 0.48830131, 0.48796186, 0.48757404, 0.48713782, 0.48665944, 0.48615369, 0.48564419, 0.48516023, 0.48472944, 0.48437089, 0.48409316, 0.48389918, 0.48378944, 0.48376253, 0.48381552, 0.48394549, 0.48415029, 0.4844293, 0.4847829, 0.48521212, 0.48571718, 0.48629612, 0.48694342, 0.48764896, 0.48839828, 0.48917374, 0.48995745, 0.49073449, 0.49149519, 0.49223605, 0.49295804, 0.49366403, 0.49435475, 0.49502674, 0.49567139, 0.49627602, 0.49682623, 0.4973084, 0.49771032, 0.49802169, 0.49823326, 0.49833634, 0.49832219, 0.49818254, 0.49791041, 0.49750081, 0.49695116, 0.49626192, 0.49543563, 0.49447727, 0.49339306, 0.49218872, 0.49086761, 0.48942932, 0.48786932, 0.48618072, 0.48435676, 0.48239473, 0.48030058, 0.47809356, 0.47580832, 0.47349232, 0.47120038, 0.46898708, 0.46690011, 0.46497613, 0.46324077, 0.46171075, 0.46039549, 0.45929721, 0.45841035, 0.45772281, 0.45721975, 0.456889, 0.45672631, 0.45673794, 0.45693943, 0.45735034, 0.45798826, 0.45886374, 0.45997736, 0.46132013, 0.46287486, 0.46461621, 0.46651077, 0.46851414, 0.47056893, 0.47260261, 0.47452906, 0.47625539, 0.47769767, 0.47881117, 0.47963849, 0.48037988, 0.48148134, 0.48372588]
+    }]
+
+});
+
+chart.reflow();
+
+function updateBoard(val) {
+    ord = val;
+    document.getElementById('ss_3d').src='./media/stepan_3d/' + ord + '.jpg';
+    document.getElementById('ss_vid').src='./media/stepan_video/' + ord + '.jpg';
+    chart.update({
+        xAxis: {
+            plotLines: [{
+                color: 'red',
+                value: val / 100,
+                width: 2
+            }],
+        }
+    });
+}
+
+// scroling watch
+var ord = 5;
+var wheelEvent = isEventSupported('mousewheel') ? 'mousewheel' : 'wheel';
+document.getElementById('ss_board').addEventListener(wheelEvent, function(e) {
+    var delta  = e.deltaY || e.wheelDelta;
+    if (delta > 0) {
+        ord += 5
+    } else {
+        ord -= 5
+    }
+    if (ord < 5) {
+        ord = 5
+    }
+    if (ord > 835) {
+        ord = 835
+    }
+    if ((ord <= 5) | (ord >= 835)) {
+        return
+    } else {
+        preventDefault(e);
+    };
+    updateBoard(ord)
+    document.getElementById('ss_slider').value = ord;
+});
+
+document.getElementById('ss_slider').addEventListener('mousemove', function(e) {
+    updateBoard(e.target.valueAsNumber)
+});
+document.getElementById('ss_slider').addEventListener('touchmove', function(e) {
+    updateBoard(e.target.valueAsNumber)
+});
+})();
+</script>
